@@ -2,7 +2,7 @@
 This is a turn base online game where each round the chosen player will choose a word and draw it! others should guess, faster you guess, more score you get, This similar to skribble.io
 Optimised and tested on Android/IOS phones and All existing browsers.
 
-## Game is made as my final project for my bachelor's in the Iran Tehran North Azad university, the score was 20/20; The reason of making this game is the lak of capabilities of Skribbl.io game for phones so I had to come up with an Idea to Implement the same thing but for phone and Farsi language as well, documentation is also icluded in the package
+## Game is made as my final project for my bachelor's degree in the Iran Tehran North Azad university, the score was 20/20; The reason of making this game is the lak of capabilities of Skribbl.io game for phones so I had to come up with an idea to implement the same thing but for phone and Farsi language as well, documentation is also icluded in the package
 
 ## About the making
 This game was made using Adobe Phonegap/P5js(very little)/Nodejs/socket.io, took around 5 months of developement.
