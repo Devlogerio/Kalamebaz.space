@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <link rel="stylesheet" type="text/css" href="css/gameStyle.css">
+    </head>
+    <body dir="rtl" oncontextmenu="return false;">
+        <div class='gamemainDiv'>
+            <div id="chooseWordDiv" class="chooseWordDiv">
+                <button id="word1Button" onmouseup="chooseWord1()" class="wordButton"></button>
+                <button id="word2Button" onmouseup="chooseWord2()" class="wordButton"></button>
+                <button id="word3Button" onmouseup="chooseWord3()" class="wordButton"></button>
+            </div>
+            
+            <div id="topThreeDiv" class="topThreeDiv">
+                    <!-- <div class="topThreeDivInside"> <p class="topThreeP">Cena ---- 5000</p><div class="topThreeDivNumber">1</div></div>
+                    <div class="topThreeDivInside"> <p class="topThreeP">FFFFFFFFFF ---- 4000</p><div class="topThreeDivNumber">2</div></div>
+                    <div class="topThreeDivInside"> <p class="topThreeP">HHHHHHHHHH ---- 3000</p><div class="topThreeDivNumber">3</div></div> -->
+            </div>
+    
+            <div id="wordDiv" align="center">
+                <div id="roundDiv" align="center">0</div>
+                <div id="timerDiv" align="center">0</div>
+                <button id="kickButton" onclick="voteKick()" align="center">kick</button>
+                <label dir="ltr" id="wordLabel"></label>
+            </div>
+
+            <div id="playersDiv">
+                <div dir="rtl" id="guessDiv">
+                </div>
+                <div id="ladderDiv">
+                </div>
+            </div>
+
+            <input id="chatInput" autocomplete="off" onkeydown="sendText()" type="text" name="" placeholder="اینجا چت کنید" value="">
+            
+            <div id="canvasDiv">
+                <div id="canvasHolder"></div>
+            </div>
+
+            <div id="toolsDiv">
+                <table class="toolsTable">
+                    <tr>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('size', 'small')"    class="toolsTableButtonTop" style="background-color: #210042; font-size: 1.5vh">&#9898;</botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('size', 'medium')"   class="toolsTableButtonTop" style="background-color: #210042; font-size: 2vh">&#9898;</botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('size', 'large')"    class="toolsTableButtonTop" style="background-color: #210042; font-size: 2.5vh">&#9898;</botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#ff00ff')" class="toolsTableButtonTop" style="background-color: rgb(255, 0, 255);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#48ff00')" class="toolsTableButtonTop" style="background-color: rgb(72, 255, 0);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#fbff00')" class="toolsTableButtonTop" style="background-color: rgb(251, 255, 0);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#0000ff')" class="toolsTableButtonTop" style="background-color: rgb(0, 0, 255);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#ff0000')" class="toolsTableButtonTop" style="background-color: rgb(255, 0, 0);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#ffffff')" class="toolsTableButtonTop" style="background-color: rgb(255, 255, 255);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#000000')" class="toolsTableButtonTop" style="background-color: rgb(0, 0, 0);"></botton></th>
+                    </tr>
+                    <tr>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('delete', '1')"      class="toolsTableButtonBottom" style="background-color: #210042;">&#9986;</botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('eraser', '2')"      class="toolsTableButtonBottom" style="background-color: #210042;">&#9737;</botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('brush', '3')"       class="toolsTableButtonBottom" style="background-color: #210042;">&#9999;</botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#00f7ff')" class="toolsTableButtonBottom" style="background-color: rgb(0, 247, 255);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#1b5500')" class="toolsTableButtonBottom" style="background-color: rgb(27, 85, 0);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#ff5e00')" class="toolsTableButtonBottom" style="background-color: rgb(255, 94, 0);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#08004d')" class="toolsTableButtonBottom" style="background-color: rgb(8, 0, 77);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#6d0000')" class="toolsTableButtonBottom" style="background-color: rgb(109, 0, 0);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#9c501c')" class="toolsTableButtonBottom" style="background-color: rgb(156, 80, 28);"></botton></th>
+                    <th class="toolsTableTh"><botton onclick="chooseTool('color', '#797979')" class="toolsTableButtonBottom" style="background-color: rgb(121, 121, 121);"></botton></th>
+                    </tr>
+                </table>
+                <table class="keyboardButtonTable">
+                    <tr>
+                        <th class="keyboardButtonTableTh"><button id="typeButton" onclick="typeFocus()" type="button">کلمه</button></th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <div id="socketIoLibraryHolder"></div>
+        <script src="libs/p5.js"></script>
+        <script src="libs/p5.dom.js"></script>
+        <script src="js/code.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/sketch.js"></script>
+        <script id="socketIoLibraryScriptTag" src="http://localhost:2000/socket.io/socket.io.js"></script>
+
+    </body>
+
+</html>

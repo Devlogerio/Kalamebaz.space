@@ -1,0 +1,412 @@
+@font-face {
+	font-family: 'Lalezar';
+	src: url('fonts/Lalezar-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	font-family: lalezar;
+}
+html {
+	font-family: "Lalezar"
+}
+body {
+	-webkit-user-select: none;
+	/* Safari 3.1+ */
+	-moz-user-select: none;
+	/* Firefox 2+ */
+	-ms-user-select: none;
+	/* IE 10+ */
+	user-select: none;
+	/* Standard syntax */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-top:0px;
+	margin-left: 0px;
+	width:100%;
+	height:100%;
+	background:linear-gradient(180deg, rgba(1,1,1,1) 0%, rgba(31,0,62,1) 100%);
+	font-size: 2.5vh;
+	margin: 0;
+	padding: 0;
+}
+.gamemainDiv {
+	margin: auto;
+	width:100%;
+	max-width: 100vh;
+	background: linear-gradient(180deg, rgba(222,15,44,1) 0%, rgba(32,4,67,1) 80%);
+}
+.chooseWordDiv {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	margin: auto auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	max-width: 100vh;
+	padding-top: 6%;
+}
+.wordButton {
+	width: 75%;
+	height:25%;
+	position:relative;
+	right: 12.5%;
+	background-color: #210042;
+	margin-top: 1%;
+	font-size: 5vh;
+	border: 1vh solid rgba(201,0,67,1);
+	color: #ffffff;
+	border-radius: 3vh;
+	outline: none
+}
+.topThreeDiv {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	background-color: #21004283;
+	position: fixed;
+	margin: auto auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	max-width: 100vh;
+	padding-top: 6%;
+}
+.topThreeDivInside {
+	width: 75%;
+	height:25%;
+	position:relative;
+	right: 12.5%;
+	background-color: #210042;
+	margin-top: 1%;
+	font-size: 4vh;
+	line-height: 4vh;
+	border: 1vh solid rgba(201,0,67,1);
+	color: #ffffff;
+	border-radius: 3vh;
+	outline: none;
+	text-align: center;
+	vertical-align: middle;
+}
+.topThreeP {
+	margin-top: 9vh;
+	position: absolute;
+	margin-left: 25vh;
+	margin-right: 10%;
+}
+.topThreeDivNumber {
+	width:9vh;
+	height: 9vh;
+	background-color: rgb(226, 185, 0);
+	position: absolute;
+	font-size: 4vh;
+	left:0;
+	border-radius: 100%;
+	vertical-align: middle;
+	line-height: 3vh;
+	text-align: center;
+	line-height: 9vh;
+}
+#wordDiv {
+	width:100%;
+	height: 5vh;
+	position: relative;
+	font-size: 2.5vh;
+	max-width: 100vh;
+}
+#roundDiv {
+	width:5vh;
+	height: 5vh;
+	background: linear-gradient(90deg, #210042 0%, #53033A 100%);
+	position: absolute;
+	font-size: 2.5vh;
+	left:0;
+	border-radius: 0 0 0 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 5vh;
+	color:white;
+}
+#timerDiv {
+	width:5vh;
+	height: 5vh;
+	background-color: #53033A;
+	position: absolute;
+	font-size: 2.5vh;
+	left:5vh;
+	border-radius: 0 5vh 5vh 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 5vh;
+	color: white;
+}
+#kickButton {
+	width:5vh;
+	height: 5vh;
+	background-color: rgba(201,0,67,1);
+	position: absolute;
+	font-size: 2.5vh;
+	right:0;
+	border-radius: 5vh;
+	border: 0.3vh solid #210042;
+	font-size: 2vh;
+	padding: 0;
+	outline: none;
+	color: #210042;
+}
+#wordLabel {
+	margin: auto;
+	color:white;
+	height:5vh;
+	text-align: center;
+	width: 30vw;
+	vertical-align: middle;
+	line-height: 5vh;
+	font-size: 2.5vh;
+	position: absolute;
+	left: 0;
+	right: 0;
+	white-space: nowrap;
+}
+#playersDiv {
+	width:100%;
+	height: 19vh;
+	background: linear-gradient(180deg, rgba(255,90,21,1) 0%, rgba(96,2,47,1) 100%);
+	position: relative;
+	margin-top: 0.5vh;
+	overflow-y: hidden;
+	font-size: 2.5vh;
+	max-width: 100vh;
+	border-radius: 2vh;
+}
+#guessDiv {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	margin-right: 0;
+	overflow-y: scroll;
+	font-size: 2.5vh;
+	background: linear-gradient(145deg, rgba(222,15,44,1) 0%, rgba(96,2,47,1) 80%);
+}
+#ladderDiv {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	margin-right: 50%;
+	overflow-y: scroll;
+	background: linear-gradient(215deg, rgba(222,15,44,1) 0%, rgba(96,2,47,1) 80%);
+}
+#chatInput {
+	position: relative;
+	width: 93%;
+	height: 5vh;
+	font-size: 3vh;
+	margin-top: 0.5vh;
+	border-radius: 2.5vh;
+	margin-right: 1%;
+	outline:none;
+	max-width: 100vh;
+	padding-right: 5%;
+	border: 1px solid white;
+}
+#canvasDiv {
+	width:100%;
+	height: 60vh;
+	position: relative;
+	margin-top: 0.5vh;
+	font-size: 2.5vh;
+	max-width: 100vh;
+}
+#canvasHolder {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	width: 100vw;
+	height: 100vw;
+	max-width: 60vh;
+	max-height: 60vh;
+	background-color: white;
+}
+#toolsDiv {
+	width:100%;
+	height: 9vh;
+	position: relative;
+	margin-top: 0vh;
+	font-size: 2.5vh;
+	bottom: 0px;
+	max-width: 100vh;
+}
+.toolsTable {
+	clear: both;
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	width: 85%;
+	border-collapse: collapse;
+	top:0
+}
+.toolsTableTh {
+	width: 10%;
+	height: 50%;
+	padding:0;
+	margin:0;
+}
+.toolsTableButtonTop {
+	height: 4.1vh;
+	float: left;
+	border-radius: 0.5vh;
+	padding:0;
+	outline: none;
+	color: white;
+	width:100%;
+	border: 0.3vh solid rgba(201,0,67,1);
+}
+.toolsTableButtonBottom {
+	height: 3.8vh;
+	float: left;
+	border-radius: 0.5vh;
+	padding:0;
+	outline: none;
+	color: white;
+	width:100%;
+	border: 0.3vh solid rgba(201,0,67,1);
+}
+.keyboardButtonTable {
+	clear: both;
+	position: absolute;
+	left: 85%;
+	margin-left: 0;
+	width: 15%;
+	border-collapse: collapse;
+	height: 100%;
+}
+.keyboardButtonTableTh {
+	width: 100%;
+	height: 8vh;
+}
+#typeButton {
+	width: 100%;
+	height: 100%;
+	background-color: #210042;
+	border-radius: 0.5vh;
+	outline: none;
+	font-size: 2.5vh;
+	padding: 0;
+	border: 0.3vh solid rgba(201,0,67,1);
+	color: white;
+}
+.guessDivInside {
+	margin: 0;
+	position:relative;
+	width: 100%;
+	padding-right: 1vh;
+}
+.ladderString0 {
+	color: white;
+	text-align: center;
+	height: 6vh;
+	border: 4px solid #3e007c;
+	position: relative;
+}
+.ladderString1 {
+	color: white;
+	text-align: center;
+	height: 6vh;
+	border: 1px solid grey;
+	position: relative;
+}
+.ladderString2 {
+	position: absolute;
+	color:#45ff70;
+	left:5.5vh;
+	top: 3.5vh;
+}
+.ladderString3 {
+	padding: 0px;
+	margin:0px;
+	font-size: 2vh;
+}
+.ladderString4 {
+	height: 6vh;
+	float: left;
+	border-radius: 50%;
+}
+.ladderString5 {
+	padding: 0;
+	margin:0;
+	display: block;
+	font-size: 2vh;
+}
+.ladderString6 {
+	width: 60%;
+	background-color:black;
+	height:2px;
+	border: 0;
+	padding: 0;
+	margin:0;
+	display: block;
+	margin: auto;
+}
+.ladderString7 {
+	padding: 0;
+	margin:0;
+	display: block;
+	font-size: 2vh;
+}
+.ladderString8 {
+	color: white;
+	text-align: center;
+	height: 6vh;
+	border: 1px solid grey;
+	position: relative;
+}
+.ladderString9 {
+	height: 6vh;
+	float: left;
+	border-radius: 50%;
+}
+.ladderString10 {
+	padding: 0;
+	margin:0;
+	display: block;
+	font-size: 2vh;
+}
+.ladderString11 {
+	width: 60%;
+	background-color:black;
+	height:2px;
+	border: 0;
+	padding: 0;
+	margin:0;
+	display: block;
+	margin: auto;
+}
+.ladderString12 {
+	padding: 0;
+	margin:0;
+	display: block;
+	font-size: 2vh;
+}
+.headerWord {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	text-align: center;
+	width: 100%;
+	font-size: 6vh;
+	height: 10vh;
+	color: #ffffff;
+}

@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Lalezar';
+    src: url('fonts/Lalezar-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+	font-family: "Lalezar";
+}
+body {
+	-webkit-user-select: none;
+	/* Safari 3.1+ */
+	-moz-user-select: none;
+	/* Firefox 2+ */
+	-ms-user-select: none;
+	/* IE 10+ */
+	user-select: none;
+	/* Standard syntax */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-top:0px;
+	margin-left: 0px;
+	width:100%;
+	height:100%;
+	background: linear-gradient(180deg, rgba(255,44,55,1) 0%, rgba(201,0,67,1) 100%);
+	font-size: 2vh;
+	max-width: 600px;
+}
+.button {
+	background-color: #4CAF50;
+	/* Green */
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.button1 {
+	background-color: #210042;
+	color: #ffffff;
+	border: 0.2vh solid rgba(201,0,67,1);
+	border-radius: 1vh;
+	font-family: Lalezar;
+}
+.button1:hover {
+	background-color: rgba(201,0,67,1);
+	color: black;
+	border: 2px solid #210042;
+}
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: thistle;
+	opacity: 1;
+	/* Firefox */
+}
+.headerContainer {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	width: 90vw;
+	height: 15vh;
+	margin-top: 4vh;
+	background: linear-gradient(180deg, rgba(255,90,21,1) 0%, rgba(255,44,55,1) 100%);
+	border-radius: 4vw 4vw 0 0;
+	overflow-y: hidden;
+	max-width: 600px;
+}
+.headerWord{
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	text-align: center;
+	width: 100%;
+	font-size: 6vh;
+	height: 10vh;
+	color: #ffffff;
+}
+.treeHolder {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	width: 90vw;
+	height: 30vh;
+	margin-top: 19.5vh;
+	border-radius: 0;
+	max-width: 600px;
+}
+#ladderDiv {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 100%;
+    height: 30vh;
+    margin-top: 5.5vh;
+    background: linear-gradient(180deg, rgba(201,0,67,1) 43%, rgba(88,0,54,1) 100%);
+    border-radius: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 795px;
+}
+.treeHolderHeader {
+	position: relative;
+	left:0;
+	right:0;
+	margin:auto;
+	text-align: center;
+	width: 100%;
+	font-size: 3.5vh;
+	height: 5vh;
+	background: linear-gradient(180deg, rgba(255,44,55,1) 0%, rgba(201,0,67,1) 100%);
+	color: white;
+}
+.treeHolderRow {
+	position: relative;
+	width: 90%;
+	height:4vh;
+	font-size: 3vh;
+	padding-top: 1vh;
+	padding-right: 10%;
+	border-width: 0.1vh;
+	border-style: solid;
+	border-color: rgba(255,44,55,1);
+	color: #000000;
+	text-align: center;
+}
+#signInForm {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	width: 90vw;
+	margin-top: 55.5vh;
+	height: 42vh;
+	background: linear-gradient(180deg, rgba(88,0,54,1) 0%, rgba(27,0,59,1) 50%, rgba(0,0,50,1) 100%);
+	border-radius: 0 0 4vw 4vw;
+	max-width: 600px;
+}
+.userPassInput {
+	position: relative;
+	font-family: Lalezar;
+	width: 75%;
+	height: 20%;
+	font-size: 3.5vh;
+	border-radius: 1vh;
+	margin-right: 9%;
+	margin-top: 2vh;
+	padding-right: 5%;
+	outline:none;
+	background-color: transparent;
+	border-color: rgba(201,0,67,1);
+	border-style: solid;
+	color: white;
+}
+.loginButton {
+	position: relative;
+	width: 75%;
+	height: 25%;
+	font-size: 3.5vh;
+	margin-right: 12%;
+	margin-top: 2vh;
+	outline:none;
+}
+.signInForgot {
+	position: relative;
+	width: 80%;
+	margin-right: 10%;
+	margin-top: 1vh;
+	text-align: center;
+	text-align: center;
+	font-size: 2.5vh;
+	color: white;
+}
+.aStyle {
+	color: rgba(255,90,21,1);
+}
+
+.startHeader {
+    position: relative;
+    width: 90%;
+    margin-right: 5%;
+    margin-top: 2vh;
+	background: radial-gradient(circle, rgba(255,44,55,1) 0%, rgba(31,0,63,1) 100%);
+	text-align: center;
+    font-size: 5vh; color: #ffffff;
+    border-radius: 1vh;
+}
+.avatarSelector {
+    position: relative;
+    width: 90%;
+	height: 12vh;
+    margin-right: 5%;
+    margin-top: 1vh;
+    background: radial-gradient(circle, rgba(255,44,55,1) 0%, rgba(31,0,63,1) 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh; color: #ffffff;
+    border-radius: 1vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.avatarSelectorInside {
+    position: relative;
+    width: 100%;
+	height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh; color: #ffffff;
+    border-radius: 1vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.avatar {
+	background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 1) 90%);
+	height: 8vh;
+	float: left;
+	border-radius: 50%;
+}
+.avatar:hover {     
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255, 1) 90%);
+	height: 8vh;
+	float: left;
+	border-radius: 50%;  
+}
+.imageFocuser:focus img{
+	width: 10vh;
+	height: 10vh;
+	background: rgba(31,0,63,1);
+}
