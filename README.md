@@ -7,6 +7,7 @@ Optimised and tested on Android/IOS phones and All existing browsers.
 ## About the making
 This game was made using Adobe Phonegap/P5js(very little)/Nodejs/socket.io, took around 5 months of developement.
 This game is in Farsi language, With ability of work in English with few tweaks
+## Documentation is in Farsi language sorry
 
 ## More games like this:
 #http://pury.space
