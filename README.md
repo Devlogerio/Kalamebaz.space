@@ -11,11 +11,12 @@ This game is in Farsi language, With ability of work in English with few tweaks
 
 ## More of my games like this:
 #http://pury.space
-#http://ufowars.space
-#http://sperms.space
-#http://kalamebaz.space
-#http://cyberbugs.space
-#http://aliens.website
+#https://lastwar.herokuapp.com/
+#https://sperms.herokuapp.com/
+#https://kalamebazspace.herokuapp.com/
+#https://antclone.herokuapp.com/
+#https://ufowarspace.herokuapp.com/
+
 
 ## How to run:
 1) Install Phonegap and use the client folder as the app on it
