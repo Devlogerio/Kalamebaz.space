@@ -10,12 +10,7 @@ This game is in Farsi language, With ability of work in English with few tweaks
 ## Documentation is in Farsi language sorry
 
 ## More of my games like this:
-#http://pury.space
-#https://lastwar.herokuapp.com/
-#https://sperms.herokuapp.com/
-#https://kalamebazspace.herokuapp.com/
-#https://antclone.herokuapp.com/
-#https://ufowarspace.herokuapp.com/
+https://github.com/Devlogerio?tab=repositories
 
 
 ## How to run:
