@@ -12,6 +12,7 @@ This game is in Farsi language, With ability of work in English with few tweaks
 ## More of my games like this:
 https://github.com/Devlogerio?tab=repositories
 
+IMPORTANT NODE: Phonegap project has huge changes during the past years, this project may not work
 
 ## How to run:
 1) Install Phonegap and use the client folder as the app on it
