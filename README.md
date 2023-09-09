@@ -9,9 +9,6 @@ This game was made using Adobe PhoneGap/P5js(very little)/Nodejs/socket.io and t
 This game is in Farsi language, With the ability to work in English with a few tweaks
 ## Documentation is in Farsi language sorry
 
-## More of my games like this:
-https://github.com/Devlogerio?tab=repositories
-
 IMPORTANT NODE: The PhoneGap project has had huge changes during the past years, so this project may not work
 
 ## How to run:
@@ -24,12 +21,8 @@ IMPORTANT NODE: The PhoneGap project has had huge changes during the past years,
 7) Or open the app from your device
 ## Doesnt work on Android versions less than 5 <I had to say, just in case>
 
-## About the versions:
-Every single change is submitted and documented as files and backups on my backup hard drives, If you have any request or question about previous versions of this game or any other of my games, you should call me, I am unable to document every single of my changes on GitHub so everything is backed up other places and only the final version/versions are here.
-<I have the code from empty to full final version as files!>
-
-## Reason of being open source
-Github private repository is forbidden in my country so I decided to make all of my games open source for public
+## More of my games like this:
+https://github.com/Devlogerio?tab=repositories
 
 ## Contact:
 Made by: Cena Abachi  
