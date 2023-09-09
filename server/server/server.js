@@ -1,9 +1,4 @@
-/*
-  By: Cena Abachi
-  gmail: devloger.io@gmail.com
-  whatsapp: +98 9128573237
-  last update: 5/11/2019
-*/
+// Made by Cena Abachi Known as Devlogerio, find me on Youtube, Instagram, and Github: Devlogeiro LinkedIn: Cena Abachi, devloger.io@gmail.com
 
 // here we add the code needed for this page
 const {roomSelector, addToJoinedRoom, getInitPack} = require('./utils/functions');
