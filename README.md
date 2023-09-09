@@ -2,7 +2,7 @@
 This is a turn-based online game where each round the chosen player will choose a word and draw it! others should guess, the faster you guess, the higher score you get, This similar to skribble.io
 Optimized and tested on Android/IOS phones and All existing browsers.
 
-## Game was made as my final project for my bachelor's degree at the Iran Tehran North Azad University, the score was 20 out of 20 Iran university scoring system; The reason for making this game is the lack of capabilities of Skribbl.io game for phones so I had to come up with an idea to implement the same thing but for phone and Farsi language as well, documentation is also included in the package
+## Game was made as my final project for my bachelor's degree at the Iran Tehran North Azad University, The score was 20 out of 20 Iran University scoring system; The reason for making this game is the lack of capabilities of Skribbl.io game for phones so I had to come up with an idea to implement the same thing but for phone and Farsi language as well, documentation is also included in the package
 
 ## About the making
 This game was made using Adobe PhoneGap/P5js(very little)/Nodejs/socket.io and took around 5 months of development.
@@ -31,7 +31,3 @@ Youtube: Devlogerio
 Twitch: Devlogerio
 Instagram: Devlogerio
 
-## Contact:
-Made by: Cena Abachi --- 
-Mail: devloger.io@gmail.com --- 
-Phone: +98 912 857 3237
